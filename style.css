@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    background-color: rgb(247, 245, 245);
+}
+.main{
+    width: 94vw;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+h1{
+    font-size: 3rem;
+    color: brown;
+}
+#cart{
+    font-size: 3rem;
+    height: 100%;
+}
+.contain-cart{
+    position: relative; 
+}
+.contain-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 2.2rem;
+    padding-bottom: 1px;
+}
+
+#cart::after{
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+#input{
+    text-align: center;
+    margin-top: 2px;
+}
+#input button{
+    background-color: rgb(235, 135, 135);
+    color: white;
+}
+input{
+    height: 3rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.content button{
+    margin-top: 1rem;
+}
+
+button{
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(165, 75, 165);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    box-shadow: 5px 5px 5px 3px lightpink;
+}
+button::after{
+    background-color: rgb(206, 60, 60);
+}
+#heart{
+    font-size: 2rem;
+    position: absolute;
+    top: 1px;
+    margin-top: 10px;
+    margin-left: 11rem;
+}
+#heart{
+    cursor: pointer;
+}
+.listProduct{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+.shoe{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+.bag{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+.cloth{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.item1{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 5ms;
+    box-shadow: 2px 2px;
+    margin-left: 1rem;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font: small;
+}
+
+.item1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+.shoes{
+    background-color: rgb(165, 110, 110);
+}
+img{
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+h3{
+    background-color: rgb(235, 231, 231);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: rgb(71, 70, 70);
+}
+div .box{
+    background-color: white;
+    height: 35rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px rgb(236, 240, 241);
+}
+.cartTab{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px ;
+    left: 100%;
+    transition: transform 0.5s;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showCart .main{
+    transform: translateX(-250px);
+}
+h2{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: brown;
+    font-family: poppins;
+    font-weight: 300;
+    color: black;
+    border-radius: 5px;
+    margin: 1rem;
+}
+.cartTab .btn .close{
+    background-color: white;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.image img{
+    width: 5rem;
+    height: 5rem;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 120px 90px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.quantity .minus{
+    color: red;
+    font-weight: 700;
+    background-color: white;
+}
+.quantity .plus{
+    color: purple;
+    font-weight: 700;
+    background-color: white;
+}
+.listCart .item:nth-child(even){
+    background-color: rgba(253, 253, 253, 0.1);
+}
+.listcart{
+    overflow: auto; 
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}

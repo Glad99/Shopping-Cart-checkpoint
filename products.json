@@ -1,0 +1,26 @@
+[
+{
+    "id": 1,
+    "name": "p1",
+    "price": 1800,
+    "image": "assets/p1.PNG"
+},
+{
+    "id": 2,
+    "name": "p2",
+    "price": 1800,
+    "image": "assets/p2.PNG"
+},
+{
+    "id": 3,
+    "name": "p3",
+    "price": 1800,
+    "image": "assets/p3.PNG"
+},
+{
+    "id": 4,
+    "name": "p4",
+    "price": 1800,
+    "image": "assets/p4.PNG"
+}
+]
